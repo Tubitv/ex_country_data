@@ -3,6 +3,8 @@ defmodule CountryDataTest do
   require CountryData.TestUtils
   alias CountryData.TestUtils
 
+  doctest CountryData
+
   TestUtils.test_fetch_all([
     ["countries", "name", "China"],
     ["currencies", "code", "EUR"],
