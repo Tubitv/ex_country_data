@@ -1,6 +1,6 @@
 # CountryData
 
-**TODO: Add description**
+The country, language & currency utility functions inspired by https://github.com/OpenBookPrices/country-data/.
 
 ## Installation
 
@@ -18,4 +18,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/country_data](https://hexdocs.pm/country_data).
-

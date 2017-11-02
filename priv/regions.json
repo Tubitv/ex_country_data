@@ -1,0 +1,366 @@
+[
+  {
+    "name": "Central Asia",
+    "countries": [
+      "KZ",
+      "KG",
+      "TJ",
+      "TM",
+      "UZ"
+    ]
+  },
+  {
+    "name": "Southern Asia",
+    "countries": [
+      "AF",
+      "BD",
+      "BT",
+      "IO",
+      "IN",
+      "IR",
+      "MV",
+      "NP",
+      "PK",
+      "LK"
+    ]
+  },
+  {
+    "name": "Southeast Asia",
+    "countries": [
+      "BN",
+      "KH",
+      "CX",
+      "CC",
+      "TL",
+      "ID",
+      "LA",
+      "MY",
+      "MM",
+      "PH",
+      "SG",
+      "TH",
+      "VN"
+    ]
+  },
+  {
+    "name": "East Asia",
+    "countries": [
+      "CN",
+      "HK",
+      "JP",
+      "KP",
+      "KR",
+      "MO",
+      "MN",
+      "TW"
+    ]
+  },
+  {
+    "name": "Western Asia",
+    "countries": [
+      "AM",
+      "AZ",
+      "BH",
+      "IQ",
+      "IL",
+      "JO",
+      "KW",
+      "LB",
+      "OM",
+      "PS",
+      "QA",
+      "SA",
+      "SY",
+      "TR",
+      "AE",
+      "YE"
+    ]
+  },
+  {
+    "name": "Central Aftrica",
+    "countries": [
+      "AO",
+      "CM",
+      "CF",
+      "TD",
+      "CG",
+      "CD",
+      "GQ",
+      "GA",
+      "ST"
+    ]
+  },
+  {
+    "name": "North Africa",
+    "countries": [
+      "DZ",
+      "EG",
+      "LY",
+      "MA",
+      "SD",
+      "TN",
+      "EH"
+    ]
+  },
+  {
+    "name": "Southern Africa",
+    "countries": [
+      "BW",
+      "LS",
+      "NA",
+      "ZA",
+      "SZ"
+    ]
+  },
+  {
+    "name": "East Africa",
+    "countries": [
+      "BI",
+      "KM",
+      "DJ",
+      "ER",
+      "ET",
+      "KE",
+      "MG",
+      "MW",
+      "MU",
+      "YT",
+      "MZ",
+      "RE",
+      "RW",
+      "SC",
+      "SO",
+      "SS",
+      "TZ",
+      "UG",
+      "ZM",
+      "ZW"
+    ]
+  },
+  {
+    "name": "West Africa",
+    "countries": [
+      "BJ",
+      "BF",
+      "CV",
+      "CI",
+      "GM",
+      "GH",
+      "GN",
+      "GW",
+      "LR",
+      "ML",
+      "MR",
+      "NE",
+      "NG",
+      "SH",
+      "SN",
+      "SL",
+      "TG"
+    ]
+  },
+  {
+    "name": "Central America",
+    "countries": [
+      "BZ",
+      "CR",
+      "SV",
+      "GT",
+      "HN",
+      "NI",
+      "PA"
+    ]
+  },
+  {
+    "name": "Northern America",
+    "countries": [
+      "BM",
+      "CA",
+      "GL",
+      "MX",
+      "PM",
+      "US"
+    ]
+  },
+  {
+    "name": "Caribbean",
+    "countries": [
+      "AI",
+      "AG",
+      "AW",
+      "BS",
+      "BB",
+      "BQ",
+      "VG",
+      "KY",
+      "CU",
+      "CW",
+      "DM",
+      "DO",
+      "GD",
+      "GP",
+      "HT",
+      "JM",
+      "MQ",
+      "MS",
+      "PR",
+      "BL",
+      "KN",
+      "LC",
+      "MF",
+      "VC",
+      "SX",
+      "TT",
+      "TC",
+      "VI"
+    ]
+  },
+  {
+    "name": "South America",
+    "countries": [
+      "AR",
+      "BO",
+      "BR",
+      "CL",
+      "CO",
+      "EC",
+      "FK",
+      "GF",
+      "GY",
+      "PY",
+      "PE",
+      "SR",
+      "UY",
+      "VE"
+    ]
+  },
+  {
+    "name": "Antartica",
+    "countries": [
+      "AQ",
+      "BV",
+      "TF",
+      "HM",
+      "GS"
+    ]
+  },
+  {
+    "name": "Northern Europe",
+    "countries": [
+      "AX",
+      "DK",
+      "EE",
+      "FO",
+      "FI",
+      "GG",
+      "IS",
+      "IE",
+      "JE",
+      "IM",
+      "LV",
+      "LT",
+      "NO",
+      "SJ",
+      "SE",
+      "GB"
+    ]
+  },
+  {
+    "name": "Southern Europe",
+    "countries": [
+      "AL",
+      "AD",
+      "BA",
+      "HR",
+      "CY",
+      "GI",
+      "GR",
+      "IT",
+      "MK",
+      "VA",
+      "MT",
+      "ME",
+      "PT",
+      "SM",
+      "RS",
+      "SI",
+      "ES"
+    ]
+  },
+  {
+    "name": "Eastern Europe",
+    "countries": [
+      "BY",
+      "BG",
+      "CZ",
+      "GE",
+      "HU",
+      "MD",
+      "PL",
+      "RO",
+      "RU",
+      "SK",
+      "UA"
+    ]
+  },
+  {
+    "name": "Western Europe",
+    "countries": [
+      "AT",
+      "BE",
+      "FR",
+      "DE",
+      "LI",
+      "LU",
+      "MC",
+      "NL",
+      "CH"
+    ]
+  },
+  {
+    "name": "Australia",
+    "countries": [
+      "AU",
+      "NF",
+      "NZ"
+    ]
+  },
+  {
+    "name": "Melanesia",
+    "countries": [
+      "FJ",
+      "NC",
+      "PG",
+      "SB",
+      "VU"
+    ]
+  },
+  {
+    "name": "Micronesia",
+    "countries": [
+      "GU",
+      "KI",
+      "MH",
+      "FM",
+      "NR",
+      "MP",
+      "PW",
+      "UM"
+    ]
+  },
+  {
+    "name": "Polynesia",
+    "countries": [
+      "AS",
+      "CK",
+      "PF",
+      "NU",
+      "PN",
+      "WS",
+      "TK",
+      "TO",
+      "TV",
+      "WF"
+    ]
+  }
+]
