@@ -6,37 +6,37 @@ defmodule CountryData do
 
   1) retrieve all country data
 
-    iex> [country | _rest] = CountryData.all_countries()
-    iex> country["alpha2"]
-    "AC"
+      iex> [country | _rest] = CountryData.all_countries()
+      iex> country["alpha2"]
+      "AC"
 
   You can also retrieve all languages, all currencies, all regions.
 
   2) search by certain fields
 
-    iex> [us] = CountryData.search_countries_by_alpha2("US")
-    iex> us["name"]
-    "United States"
+      iex> [us] = CountryData.search_countries_by_alpha2("US")
+      iex> us["name"]
+      "United States"
 
-    iex> [cn] = CountryData.search_countries_by_name("Canada")
-    iex> cn["alpha3"]
-    "CAN"
+      iex> [cn] = CountryData.search_countries_by_name("Canada")
+      iex> cn["alpha3"]
+      "CAN"
 
-    iex> countries = CountryData.search_countries_by_currencies("EUR")
-    iex> length(countries)
-    41
+      iex> countries = CountryData.search_countries_by_currencies("EUR")
+      iex> length(countries)
+      41
 
-    iex> [russian] = CountryData.search_languages_by_name("Russian")
-    iex> russian
-    %{"alpha2" => "ru", "alpha3" => "rus", "bibliographic" => "", "name" => "Russian"}
+      iex> [russian] = CountryData.search_languages_by_name("Russian")
+      iex> russian
+      %{"alpha2" => "ru", "alpha3" => "rus", "bibliographic" => "", "name" => "Russian"}
 
-    iex> [jpy] = CountryData.search_currencies_by_code("JPY")
-    iex> jpy
-    %{"code" => "JPY", "decimals" => 0, "name" => "Japanese yen", "number" => "392"}
+      iex> [jpy] = CountryData.search_currencies_by_code("JPY")
+      iex> jpy
+      %{"code" => "JPY", "decimals" => 0, "name" => "Japanese yen", "number" => "392"}
 
-    iex> [nor] = CountryData.search_regions_by_name("Northern America")
-    iex> nor["countries"]
-    ["BM", "CA", "GL", "MX", "PM", "US"]
+      iex> [nor] = CountryData.search_regions_by_name("Northern America")
+      iex> nor["countries"]
+      ["BM", "CA", "GL", "MX", "PM", "US"]
 
   There are more utility functions for use. See docs for further information.
 
