@@ -56,7 +56,7 @@ defmodule CountryData.Mixfile do
 
   defp package do
     [
-      files: ["config", "lib", "priv", "mix.exs", "README*", "LICENSE*", "version"],
+      files: ["lib", "priv", "mix.exs", "README*", "LICENSE*", "version"],
       licenses: ["MIT"],
       maintainers: ["tyr.chen@gmail.com"],
       links: %{
