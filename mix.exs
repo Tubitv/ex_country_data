@@ -1,6 +1,6 @@
 defmodule CountryData.Mixfile do
   use Mix.Project
-  @version File.cwd!() |> Path.join("version") |> File.read! |> String.trim
+  @version File.cwd!() |> Path.join("version") |> File.read!() |> String.trim()
 
   def project do
     [
@@ -9,7 +9,7 @@ defmodule CountryData.Mixfile do
       elixir: "~> 1.5",
       description: description(),
       package: package(),
-      start_permanent: Mix.env == :prod,
+      start_permanent: Mix.env() == :prod,
       deps: deps(),
       elixirc_paths: elixirc_paths(Mix.env()),
 
@@ -37,7 +37,6 @@ defmodule CountryData.Mixfile do
   defp elixirc_paths(:dev), do: elixirc_paths(:test)
   defp elixirc_paths(_), do: ["lib"]
 
-
   defp deps do
     [
       {:poison, "~> 3.0"},
@@ -45,7 +44,7 @@ defmodule CountryData.Mixfile do
       # dev & test
       {:credo, "~> 0.8", only: [:dev, :test]},
       {:ex_doc, "~> 0.18.1", only: [:dev, :test]},
-      {:pre_commit_hook, "~> 1.0.6", only: [:dev]},
+      {:pre_commit_hook, "~> 1.0.6", only: [:dev]}
     ]
   end
 
@@ -57,11 +56,13 @@ defmodule CountryData.Mixfile do
 
   defp package do
     [
-      files: ["lib", "priv", "mix.exs", "README*", "LICENSE*", "version"],
+      files: ["config", "lib", "priv", "mix.exs", "README*", "LICENSE*", "version"],
       licenses: ["MIT"],
       maintainers: ["tyr.chen@gmail.com"],
-      links: %{"GitHub" => "https://github.com/tubitv/ex_country_data",
-              "Docs" => "http://tubitv.github.io/ex_country_data/"},
+      links: %{
+        "GitHub" => "https://github.com/tubitv/ex_country_data",
+        "Docs" => "http://tubitv.github.io/ex_country_data/"
+      }
     ]
   end
 end
