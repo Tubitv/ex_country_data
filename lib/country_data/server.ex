@@ -20,10 +20,11 @@ defmodule CountryData.Server do
   def init(name) do
     data =
       :country_data
-      |> Application.app_dir
+      |> Application.app_dir()
       |> Path.join("priv/#{name}.json")
-      |> File.read!
-      |> Poison.decode!
+      |> File.read!()
+      |> Poison.decode!()
+
     {:ok, data}
   end
 
@@ -32,13 +33,16 @@ defmodule CountryData.Server do
   end
 
   def handle_call({:search, key, value}, _from, data) do
-    result = Enum.filter(data, fn item ->
-      v = Map.get(item, key)
-      case is_list(v) do
-        true -> value in v
-        _    -> value == v
-      end
-    end)
+    result =
+      Enum.filter(data, fn item ->
+        v = Map.get(item, key)
+
+        case is_list(v) do
+          true -> value in v
+          _ -> value == v
+        end
+      end)
+
     {:reply, result, data}
   end
 

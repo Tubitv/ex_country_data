@@ -47,21 +47,22 @@ defmodule CountryData do
   :country_data
   |> Application.get_env(:supported_data)
   |> Enum.map(fn name ->
-    fun_name = :"all_#{name}"
-    @doc """
-    Retrieve all data for #{name}
-    """
-    def unquote(fun_name)(), do: Server.fetch_all(unquote(name))
-  end)
+       fun_name = :"all_#{name}"
+
+       @doc """
+       Retrieve all data for #{name}
+       """
+       def unquote(fun_name)(), do: Server.fetch_all(unquote(name))
+     end)
 
   :country_data
   |> Application.get_env(:search_interfaces)
   |> Enum.map(fn {name, key} ->
-    fun_name = :"search_#{name}_by_#{key}"
-    @doc """
-    Search all #{name} by its field #{key}
-    """
-    def unquote(fun_name)(value), do: Server.search(unquote(name), unquote(key), value)
-  end)
+       fun_name = :"search_#{name}_by_#{key}"
 
+       @doc """
+       Search all #{name} by its field #{key}
+       """
+       def unquote(fun_name)(value), do: Server.search(unquote(name), unquote(key), value)
+     end)
 end
