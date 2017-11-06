@@ -42,10 +42,10 @@ defmodule CountryData do
 
   """
 
-  alias CountryData.Server
+  alias CountryData.{Defaults, Server}
 
   :country_data
-  |> Application.get_env(:supported_data)
+  |> Application.get_env(:supported_data, Defaults.supported_data())
   |> Enum.map(fn name ->
        fun_name = :"all_#{name}"
 
@@ -56,7 +56,7 @@ defmodule CountryData do
      end)
 
   :country_data
-  |> Application.get_env(:search_interfaces)
+  |> Application.get_env(:search_interfaces, Defaults.search_interfaces())
   |> Enum.map(fn {name, key} ->
        fun_name = :"search_#{name}_by_#{key}"
 
