@@ -39,7 +39,7 @@ defmodule CountryData.Mixfile do
 
   defp deps do
     [
-      {:poison, "~> 3.0"},
+      {:poison, ">= 3.0.0 and < 5.0.0"},
 
       # dev & test
       {:credo, "~> 0.8", only: [:dev, :test]},
